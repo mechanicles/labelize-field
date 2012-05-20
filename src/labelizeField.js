@@ -1,11 +1,18 @@
+/* -----------------------------------------------
+ * LabelizeField: Simple Jquery in field label plugin
+ * author: [Santosh Wadghule, santosh.wadghule@gmail.com
+ * copyright: (c) 2012 Santosh Wadghule
+ * ----------------------------------------------- */
+
 (function($) {
+
   "use strict";
+
   $.fn.labelizeField = function(options) {
     var settings = $.extend({
       'labelClass'  : 'fade',
       'labelEffect' : true
     }, options);
-
 
     var allLabelizeFields = $('input.labelize-field');
     allLabelizeFields.each(function(){
