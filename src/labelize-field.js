@@ -49,7 +49,6 @@
     });
 
     this.click(function(){
-      $(this).next('input').focus();
 
       if (settings.labelEffect) { 
         $(this).addClass(settings.labelClass);

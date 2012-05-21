@@ -6,33 +6,32 @@
     <script>
       $(document).ready(function(){
         if($('label').length > 0){
-          $('label').labelizeField({
-          })
+          $('label').labelizeField()
         }
       });  
     </script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h2>labelizeField</h2>
-    <!--<hr />-->
-    <form action="" method="get" accept-charset="utf-8">
+    <h2>Labelize Field</h2>
+    <form action="#" method="get" accept-charset="utf-8">
       <p>
-      <label>First Name</label>
-      <input type="text" name="fname" class='labelize-field'/>
+      <label for="fname">First Name</label>
+      <input type="text" name="fname" class='labelize-field' id='fname'/>
       </p>
       <p>
-      <label>Last Name</label>
-      <input type="text" name="fname" class='labelize-field'/>
+      <label for="lname">Last Name</label>
+      <input type="text" name="fname" class='labelize-field' id='lname'/>
       </p>
       <p>
-      <label>Email</label>
-      <input type="text" name="fname" class='labelize-field'/>
+      <label for="email">Email</label>
+      <input type="text" name="fname" class='labelize-field'/ id="email">
       </p>
       <p>
-      <label>Password</label>
-      <input type="password" name="fname" class='labelize-field'/>
+      <label for="password">Password</label>
+      <input type="password" name="fname" class='labelize-field' id="password"/>
       </p>
+      <input type='submit' value='Submit'>
     </form>
   </body>
 </html>
