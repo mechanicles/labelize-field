@@ -22,6 +22,32 @@
         }
     });
 
+    allLabelizeFields.keyup(function(e){
+      if (e.keyCode == 9) {
+        if (settings.labelEffect) { 
+          $(this).prev('label').addClass(settings.labelClass);
+          $(this).keypress(function(){
+            $(this).prev('label').hide();
+          }); 
+          $(this).blur(function(){
+            $(this).prev('label').removeClass(settings.labelClass);
+            if ($(this).val() === "") {
+              $(this).prev('label').show();
+            }
+          });
+        }
+        else {
+          $(this).prev('label').hide();
+          $(this).blur(function(){
+            if ($(this).val() === "") {
+              $(this).prev('label').show();
+            }
+          });
+        }
+
+      }
+    });
+
     this.click(function(){
       $(this).next('input').focus();
 
