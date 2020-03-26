@@ -2,9 +2,14 @@ body {
   background: none repeat scroll 0 0 #EEEEEE;
   font-family: Helvetica,Arial;
   margin: 0 auto;
-  margin-top:20px;
-  width: 225px;
+  margin-top:30px;
+  width: 40.2%;
   line-height: 1;
+  font-size: 18px;
+}
+
+h2 span {
+  font-size: 12px;
 }
 
 form p { 
@@ -15,26 +20,37 @@ form p {
 }
 
 form label { 
-  position:absolute;
-  width:225px; 
-  line-height:30px;
-  cursor:text;
+  position: absolute;
+  width: 225px; 
+  line-height: 30px;
+  cursor: text;
   padding-left: 8px;
-  color:black;
+  color: grey;
 }
 
 form label.fade {
-  color:grey;
+  color: grey;
 }
 
 form input {
-  line-height:20px; 
-  width:225px; 
-  height:30px;
+  line-height: 20px; 
+  width: 225px; 
+  height: 30px;
   padding-left: 5px;
-  color:black;
+  color: black;
 }
 
 h2 {
-  border-bottom:2px dashed #ff0084;
+  border-bottom: 2px dashed #ff0084;
+}
+
+label {
+  font-size: 12px;
+}
+
+button {
+  padding: 7px;
+  color: white;
+  background-color: green;
+  border: none;
 }
